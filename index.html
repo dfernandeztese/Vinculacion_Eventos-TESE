@@ -5,7 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinculacion Eventos TESE</title>
 </head>
-<body>
-    
+<body background = "while">
+    <table>
+        <tr>
+            <th><img src = "Images/Logo_TESE.png" width="230px"></th>
+            <th><h1>TECNOLÓGICO DE ESTUDIOS SUPERIORES DE ECATEPEC</h1></th>
+        </tr>
+    </table>
+    <form action = "solicitante.html">
+        <center><input type = "submit" name = "siguiente" value = "SOLICITAR"></center>
+    </form>
+    <table style = "border: 1px solid black; WIDTH: 1350px">
+        <tr>
+            <td><img src = "Images/bandera.png" width="30px"></td>
+            <td>Bienvenidos, Ecatepec De Morelos, Estado De México.</td>
+            <td>
+                <div id="fecha_actual">
+                    <script>
+                        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                        document.getElementById("fecha_actual").innerHTML = new Date().toLocaleDateString('es-ES', options);
+                    </script>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <p>
+        La importancia de las actividades Culturales y 
+            Eventos, dentro del Tese, radica en que su práctica refuerza la
+            formación academica y complementa el desarrollo fisico y mental del
+            educado. Ademas tienden un puente de vinculación entre el individuo
+            y su entorno social, formando células en las que vive y se hace propia
+            la identidad cultural.
+            Las acciones de extención cultural del Tecnológico de Estudios Superiores
+            de Ecatepec, son a través del Departamento de Actividades Culturales,
+            además de contribuir a la formación integral de las y los educados
+            , tienden un puente de vinculación entre el Tecnológico y su entorno
+            social, entre la sociedad, que les permite proyectarse en actos de 
+            identidad individual y nacional, que fomentan el conocimiento y la
+            apresiación de las manifestacionesy valores regionales, nacionales y 
+            universales.
+    </p>
+    <br>
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/iiqh9c9jvsw?si=asdd2AwrIMh4c3KC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 </body>
 </html>
