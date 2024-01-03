@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- 2 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinculacion Eventos TESE</title>
+</head>
+<body>
+    <h4><center>DATOS DEL EVENTO POR PROGRAMAR</center></h4>
+    <form action = "tipoEvento.php" method = "POST">
+        <fieldset>
+            <legend><b>¿Usted Es Interno (Pertenece al TESE) o Externo</b></legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" id="origen" name="origen" value="interno"> <!-- Opcion 1: Interno -->
+                        <label for="origen">Interno</label>
+
+                        <input type="radio" id="origen" name="origen" value="externo"> <!-- Opcion 2: Externo -->
+                        <label for="origen">Externo</label>
+                    </td>
+                    <td>
+                        <br><br><br><br><br><br><br><br><input type = "submit" name = "siguiente" value = "SIGUIENTE">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,4 +1,5 @@
 <?php
+/* CODIGO SUSPENDIDO POR EL MOMENTO
 $nombreHost = 'localhost';
 $nombreUsuario = 'root';
 $pwd = '';
@@ -30,6 +31,7 @@ $actualizarInfo2 = "UPDATE Expositor SET idOrigen1 = '".$folioAsig2."' WHERE idE
 $conexionBD->query($actualizarInfo2);
 // XAMPP: Modificar (php.ini) ;extension=gd por extension=gd
 mysqli_close($conexionBD);
+*/
 ?>
 
 <!DOCTYPE html>
