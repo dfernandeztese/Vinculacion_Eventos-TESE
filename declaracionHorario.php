@@ -15,7 +15,7 @@ echo $tituloEvento."<br>";
 echo $descripcionEvento."<br>";
 echo $cantidadPersonas."<br>";*/
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- 6 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,12 +38,20 @@ echo $cantidadPersonas."<br>";*/
             ?>
         <fieldset>
             <legend><b>Seleccione El Día y Hora De Inicio Del Evento</b></legend>
-            <input type="datetime-local" id="inicioEvento" name="inicioEvento" value="">
+            <label for="inicioEventoF">Fecha: </label>
+            <input type="date" id="inicioEventoF" name="inicioEventoF" value="">
+
+            <label for="inicioEventoT">Hora: </label>
+            <input type="time" id="inicioEventoT" name="inicioEventoT" value="">
         </fieldset>
         <br><br>
         <fieldset>
             <legend><b>Seleccione El Día y Hora De Finalización Del Evento</b></legend>
-            <input type="datetime-local" id="finalEvento" name="finalEvento" value="">
+            <label for="finalEventoF">Fecha: </label>
+            <input type="date" id="finalEventoF" name="finalEventoF" value="">
+
+            <label for="finalEventoT">Hora: </label>
+            <input type="time" id="finalEventoT" name="finalEventoT" value="">
         </fieldset>
         <br><br>
         <fieldset>
