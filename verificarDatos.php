@@ -1,4 +1,5 @@
 <?php
+/* Datos del evento */
 $origen1_6 = $_POST["origen1_6"];
 $tipoEvento6 = $_POST["tipoEvento6"];
 $clasificacionEvento5 = $_POST["clasificacionEvento5"];
@@ -13,41 +14,43 @@ $finalEventoF3 = $_POST["finalEventoF3"];
 $finalEventoT3 = $_POST["finalEventoT3"];
 $duracionEvento3 = $_POST["duracionEvento3"];
 
-/* Material # 1*/
+/* Listado del evento */
+// Material # 1
 $m1_2 = $_POST["m1_2"];
 $numM1_2 = $_POST["numM1_2"];
 
-/* Material # 2*/
+// Material # 2
 $m2_2 = $_POST["m2_2"];
 $numM2_2 = $_POST["numM2_2"];
 
-/* Material # 3*/
+// Material # 3
 $m3_2 = $_POST["m3_2"];
 $numM3_2 = $_POST["numM3_2"];
 
-/* Material # 4*/
+// Material # 4
 $m4_2 = $_POST["m4_2"];
 $numM4_2 = $_POST["numM4_2"];
 
-/* Material # 5*/
+// Material # 5
 $m5_2 = $_POST["m5_2"];
 $tipM5_2 = $_POST["tipM5_2"];
 $numM5_2 = $_POST["numM5_2"];
 
-/* Material # 6*/
+// Material # 6
 $m6_2 = $_POST["m6_2"];
 $numM6_2 = $_POST["numM6_2"];
 
-/* Material # 7*/
+// Material # 7
 $m7_2 = $_POST["m7_2"];
 $tipM7_2 = $_POST["tipM7_2"];
 $numM7_2 = $_POST["numM7_2"];
 
-/* Material # 8*/
+// Material # 8
 $m8_2 = $_POST["m8_2"];
 $tipM8_2 = $_POST["tipM8_2"];
 $numM8_2 = $_POST["numM8_2"];
 
+/* Datos del expositor */ 
 $nombres = $_POST["nombres"];
 $apellidoP = $_POST["apellidoP"];
 $apellidoM = $_POST["apellidoM"];
@@ -58,6 +61,7 @@ $correo2 = $_POST["correo2"];
 $telefono = $_POST["telefono"];
 $celular = $_POST["celular"];
 
+/* Datos de la institucion o empresa */
 $nombreInstitucion = $_POST["nombreInstitucion"];
 $plantel = $_POST["plantel"];
 $calle = $_POST["calle"];
@@ -81,6 +85,63 @@ $correoOrigen = $_POST["correoOrigen"];
 <body>
     <h4><center>INFORMACIÓN CAPTURADA</center></h4>
     <form action = "confirmarSolicitud.php" method = "POST">
+        <?php
+            echo <<< EOT
+            <!-- Datos del evento: 11 -->
+            <input type="hidden" id="origen1_7" name="origen1_7" value="$origen1_6">
+            <input type="hidden" id="tipoEvento7" name="tipoEvento7" value="$tipoEvento6">
+            <input type="hidden" id="clasificacionEvento6" name="clasificacionEvento6" value="$clasificacionEvento5">
+            <input type="hidden" id="tituloEvento5" name="tituloEvento5" value="$tituloEvento4">
+            <input type="hidden" id="descripcionEvento5" name="descripcionEvento5" value="$descripcionEvento4">
+            <input type="hidden" id="cantidadPersonas5" name="cantidadPersonas5" value="$cantidadPersonas4">
+            <input type="hidden" id="inicioEventoF4" name="inicioEventoF4" value="$inicioEventoF3">
+            <input type="hidden" id="inicioEventoT4" name="inicioEventoT4" value="$inicioEventoT3">
+            <input type="hidden" id="finalEventoF4" name="finalEventoF4" value="$finalEventoF3">
+            <input type="hidden" id="finalEventoT4" name="finalEventoT4" value="$finalEventoT3">
+            <input type="hidden" id="duracionEvento4" name="duracionEvento4" value="$duracionEvento3">
+            <!-- Listado del evento: 19 -->
+            <input type="hidden" id="m1_3" name="m1_3" value="$m1_2">
+            <input type="hidden" id="numM1_3" name="numM1_3" value="$numM1_2">
+            <input type="hidden" id="m2_3" name="m2_3" value="$m2_2">
+            <input type="hidden" id="numM2_3" name="numM2_3" value="$numM2_2">
+            <input type="hidden" id="m3_3" name="m3_3" value="$m3_2">
+            <input type="hidden" id="numM3_3" name="numM3_3" value="$numM3_2">
+            <input type="hidden" id="m4_3" name="m4_3" value="$m4_2">
+            <input type="hidden" id="numM4_3" name="numM4_3" value="$numM4_2">
+            <input type="hidden" id="m5_3" name="m5_3" value="$m5_2">
+            <input type="hidden" id="tipM5_3" name="tipM5_3" value="$tipM5_2">
+            <input type="hidden" id="numM5_3" name="numM5_3" value="$numM5_2">
+            <input type="hidden" id="m6_3" name="m6_3" value="$m6_2">
+            <input type="hidden" id="numM6_3" name="numM6_3" value="$numM6_2">
+            <input type="hidden" id="m7_3" name="m7_3" value="$m7_2">
+            <input type="hidden" id="tipM7_3" name="tipM7_3" value="$tipM7_2">
+            <input type="hidden" id="numM7_3" name="numM7_3" value="$numM7_2">
+            <input type="hidden" id="m8_3" name="m8_3" value="$m8_2">
+            <input type="hidden" id="tipM8_3" name="tipM8_3" value="$tipM8_2">
+            <input type="hidden" id="numM8_3" name="numM8_3" value="$numM8_2">
+            <!-- Datos del expositor: 8 -->
+            <input type="hidden" id="nombres2" name="nombres2" value="$nombres">
+            <input type="hidden" id="apellidoP2" name="apellidoP2" value="$apellidoP">
+            <input type="hidden" id="apellidoM2" name="apellidoM2" value="$apellidoM">
+            <input type="hidden" id="curp2" name="curp2" value="$curp">
+            <input type="hidden" id="correo1_2" name="correo1_2" value="$correo1">
+            <input type="hidden" id="correo2_2" name="correo2_2" value="$correo2">
+            <input type="hidden" id="telefono2" name="telefono2" value="$telefono">
+            <input type="hidden" id="celular2" name="celular2" value="$celular">
+            <!-- Datos de la institucion o empresa: 11 -->
+            <input type="hidden" id="nombreInstitucion2" name="nombreInstitucion2" value="$nombreInstitucion">
+            <input type="hidden" id="plantel2" name="plantel2" value="$plantel">
+            <input type="hidden" id="calle2" name="calle2" value="$calle">
+            <input type="hidden" id="numero2" name="numero2" value="$numero">
+            <input type="hidden" id="colonia2" name="colonia2" value="$colonia">
+            <input type="hidden" id="codigoPostal2" name="codigoPostal2" value="$codigoPostal">
+            <input type="hidden" id="estadoCiudad2" name="estadoCiudad2" value="$estadoCiudad">
+            <input type="hidden" id="pais2" name="pais2" value="$pais">
+            <input type="hidden" id="telefonoOrigen2" name="telefonoOrigen2" value="$telefonoOrigen">
+            <input type="hidden" id="telefonoExtension2" name="telefonoExtension2" value="$telefonoExtension">
+            <input type="hidden" id="correoOrigen2" name="correoOrigen2" value="$correoOrigen">
+            EOT;
+        ?>
         <fieldset>
             <legend><b>Datos del evento</b></legend>
             <?php
