@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+
+  /* PRUEBA
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }*/
+
+/* TESE*/
+#tese{
+    font-family: sans-serif;
+    color: blue;
+    font-size: 40px;
+}
+
+/* Barra Presentacion  - Inicio*/
+#barra{
+    border: 1px solid black; 
+    width: 1350px;
+}
+
+#pres{
+    font-family: sans-serif;
+    font-size: 19px;
+}
+
+#pres2{
+    font-family: sans-serif;
+    font-size: 19px;
+}
+/**/
+p{
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+/* Boton */
+#boton{
+    background-color: #497EFF; /* Color del boton*/
+    border-radius: 4px; /* Pulido de las orillas */
+    border: 2px solid black; /* Color de borde */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Sombra */
+    color: white; /* Color de letra */
+    padding: 8px 32px; /* Cantidad de relleno */
+    width: 150px;
+    transition: all 0.5s;
+    text-align: center; /* Letra en el centro */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px; /* Tamaño de letra */
+    cursor: pointer; /* Cambio de cursos sobre el boton */
+    
+}
+
+#boton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+#boton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+#boton:hover span {
+    padding-right: 25px;
+  }
+  
+#boton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

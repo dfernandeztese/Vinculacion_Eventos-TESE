@@ -1,6 +1,7 @@
 <!DOCTYPE html> <!-- 0 -->
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/hojaEstilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinculacion Eventos TESE</title>
@@ -8,44 +9,66 @@
 <body background = "while">
     <table>
         <tr>
-            <th><img src = "Images/Logo_TESE.png" width="230px"></th>
-            <th><h1>TECNOLÓGICO DE ESTUDIOS SUPERIORES DE ECATEPEC</h1></th>
+            <th><img src = "Images/Logo_TESE.png" width="230px" height = "230px"></th>
+            <th><h1 id = "tese">TECNOLÓGICO DE ESTUDIOS SUPERIORES DE ECATEPEC</h1></th>
         </tr>
     </table>
-    <table style = "border: 1px solid black; WIDTH: 1350px">
+    <table id = "barra">
         <tr>
-            <td><img src = "Images/bandera.png" width="30px"></td>
-            <td>Bienvenidos, Ecatepec De Morelos, Estado De México.</td>
+            <td><img src = "Images/bandera.png" width = "30px"></td>
+            <td id = "pres">Bienvenidos, Ecatepec De Morelos, Estado De México.</td>
             <td>
-                <div id="fecha_actual">
+                <div id="pres2">
                     <script>
                         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                        document.getElementById("fecha_actual").innerHTML = new Date().toLocaleDateString('es-ES', options);
+                        document.getElementById("pres2").innerHTML = new Date().toLocaleDateString('es-ES', options);
                     </script>
                 </div>
             </td>
         </tr>
     </table>
-    <form action = "solicitante.html">
-        <center><input type = "submit" name = "siguiente" value = "SOLICITAR"></center>
+    <form action = "solicitante.html" method = "POST">
+        <!--<center><input type = "submit" class = "boton" name = "siguiente" value = "SOLICITAR"></center> -->
+        <center><button type = "submit" id = "boton"><span>SOLICITAR</span></button></center>
+        
     </form>
     <p>
-        La importancia de las actividades Culturales y 
-            Eventos, dentro del Tese, radica en que su práctica refuerza la
-            formación academica y complementa el desarrollo fisico y mental del
-            educado. Ademas tienden un puente de vinculación entre el individuo
-            y su entorno social, formando células en las que vive y se hace propia
-            la identidad cultural.
-            Las acciones de extención cultural del Tecnológico de Estudios Superiores
-            de Ecatepec, son a través del Departamento de Actividades Culturales,
-            además de contribuir a la formación integral de las y los educados
-            , tienden un puente de vinculación entre el Tecnológico y su entorno
-            social, entre la sociedad, que les permite proyectarse en actos de 
-            identidad individual y nacional, que fomentan el conocimiento y la
-            apresiación de las manifestacionesy valores regionales, nacionales y 
-            universales.
+        La importancia de las Actividades Culturales y Eventos, dentro del TESE, radica en que su práctica refuerza la
+        formación académica y complementa el desarrollo físico y mental del educando. Además, tienden un puente de
+        vinculación entre el individuo y su entorno social, formando células en las que vive y se hace propia la identidad
+        cultural.
+    </p>
+    <p>
+        La creación de este software surge de la necesidad de llevar un control adecuado y responsable que facilite a los
+        solicitantes Internos como Externos un medio digital en el que puedan solicitar un espacio para realizar un evento en
+        el Tecnológico de Estudios Superiores de Ecatepec dentro del Departamento de Vinculación y Extensión, desde
+        cualquier lugar.
+    </p>
+    <p>
+        El personal administrativo tendrá acceso rápido a las solicitudes y será más sencilla su revisión, podrán realizar una
+        actualización instantánea de información sobre los eventos solicitantes que sean aceptados, así como la
+        clasificación, tipo, concepto, horario y fecha de dicho evento.
+    </p>
+    <p>
+        El sistema de registro y control de asistencia mediante este software facilita la gestión de eventos. Esto ayuda a
+        planificar mejor, asegurando que los recursos estén disponibles de manera adecuada y que se tomen las
+        precauciones necesarias.
+    </p>
+    <p> 
+        El compromiso que tenemos como creadores de este software es contribuir una imagen positiva a la escuela,
+        mejorar la eficiencia operativa, fortalecer la conexión entre el personal Administrativo, educadores, educandos y el
+        entorno social, y contribuir así al ambiente educativo positivo y al éxito general de la Institución.
     </p>
     <br>
     <center><iframe width="560" height="315" src="https://www.youtube.com/embed/iiqh9c9jvsw?si=asdd2AwrIMh4c3KC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+    <table>
+        <tr>
+            <td><img src = "Images/logo1.png" width="250px"></td>
+            <td><img src = "Images/logo2.png" width="250px"></td>
+            <td><img src = "Images/logo3.png" width="250px"></td>
+            <td><img src = "Images/logo4.png" width="250px"></td>
+            <td><img src = "Images/logo5.png" width="250px"></td>
+        </tr>
+    </table>
 </body>
 </html>
