@@ -195,11 +195,11 @@ Por favor, responda cada campo cuidadosamente.</p>
                 </tr>
                 <tr>
                     <td><label for="telefono">Telefono: </label><br><br></td>
-                    <td><input type="tel" id="gen" name="telefono" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value="" size = "60"><br><br></td>
+                    <td><input type="tel" id="gen" name="telefono" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder = "55-1234-1234" value="" size = "60"><br><br></td>
                 </tr>
                 <tr>
                     <td><label for="celular">Celular: </label></td>
-                    <td><input type="tel" id="gen" name="celular" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value="" size = "60"></td>
+                    <td><input type="tel" id="gen" name="celular" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder = "55-1234-1234" value="" size = "60"></td>
                 </tr>
             </table>
             
@@ -324,11 +324,11 @@ Por favor, responda cada campo cuidadosamente.</p>
                         <table>
                             <tr>
                                 <td><label for="telefonoOrigen">Telefono: </label><br><br></td>
-                                <td><input type="tel" id="gen" name="telefonoOrigen" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value="" size = "90"><br><br></td>
+                                <td><input type="tel" id="gen" name="telefonoOrigen" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder = "55-1234-1234" value="" size = "90"><br><br></td>
                             </tr>
                             <tr>
                                 <td><label for="telefonoExtension">Extensión: </label><br><br></td>
-                                <td><input type="tel" id="gen" name="telefonoExtension" value="" pattern="[0-9]{4}" size = "90"><br><br></td>
+                                <td><input type="tel" id="gen" name="telefonoExtension" value="" pattern="[0-9]{4}" placeholder = "1234" size = "90"><br><br></td>
                             </tr>
                             <tr>
                                 <td><label for="correoOrigen">Correo Electronico: </label><br><br></td>

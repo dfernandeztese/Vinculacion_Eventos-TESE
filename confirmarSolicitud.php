@@ -435,6 +435,6 @@ $sector11 = mysqli_query($conexionDB, $guardarAprobacionEvento) or die ("ACABA D
     </center>
     <h1><center>SOLICITUD REGISTRADA CON EXITO!!!</center></h1>
     <h2><center>El N° DE FOLIO ES: <?php echo $idEvento;?></center></h2>
-    <h3><center>Por favor, toma nora de este folio y guárdalo en un lugar seguro.</center></h3>
+    <h3><center>Por favor, toma nota de este folio y guárdalo en un lugar seguro.</center></h3>
 </body>
 </html>
