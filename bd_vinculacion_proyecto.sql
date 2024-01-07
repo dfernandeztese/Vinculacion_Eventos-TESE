@@ -117,7 +117,7 @@ foreign key (idExpositor2) references Expositor (idExpositor)
 
 CREATE TABLE AprobacionEvento(
 idAprobacion int PRIMARY KEY AUTO_INCREMENT,
-estado varchar (10),
+estado varchar (10), /* Parametros: aceptado, rechazado, pendiente*/
 idEvento2 int,
 foreign key (idEvento2) references Evento (idEvento)
 );

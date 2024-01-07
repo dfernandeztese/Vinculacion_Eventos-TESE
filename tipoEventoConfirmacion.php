@@ -36,7 +36,7 @@ $clasificacionEvento = $_POST["clasificacionEvento"];
             <input type="text" id="gen" name="tituloEvento" size = "25" placeholder = "Escriba aquí el título." value="" ><br><br>
 
             <label for="descripcionEvento">Introduzca Una Descripcion Para EL Evento: </label><br>
-            <textarea name = "descripcionEvento" id = "gen" rows = "10" cols = "145" placeholder = "Descripción"></textarea><br><br>
+            <textarea name = "descripcionEvento" id = "gen" rows = "10" cols = "142" placeholder = "Descripción"></textarea><br><br>
 
             <label for="cantidadPersonas">Defina La Cantidad Maxima De Personas Que Podran Asistir Al Evento: </label>
             <input type="number" id="gen" name="cantidadPersonas" min="1" max="150" ><br>
