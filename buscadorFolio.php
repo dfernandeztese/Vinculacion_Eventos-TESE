@@ -1,7 +1,7 @@
 <?php
-$nombreHost = 'localhost';
-$nombreUsuario = 'root';
-$pwd = '';
+$nombreHost = 'server-tese-bd.mysql.database.azure.com';
+$nombreUsuario = 'adminVinculacionTese';
+$pwd = 'Qwerty369';
 $nombreBD = 'VinculacionProyecto';
 $folio = $_POST["folio"];
 $msj = "";

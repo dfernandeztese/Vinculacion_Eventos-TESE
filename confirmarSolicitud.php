@@ -1,8 +1,8 @@
 <?php /* 10 */
 /* Credenciales */
-$nombreHost = 'localhost';
-$nombreUsuario = 'root';
-$pwd = '';
+$nombreHost = 'server-tese-bd.mysql.database.azure.com';
+$nombreUsuario = 'adminVinculacionTese';
+$pwd = 'Qwerty369';
 $nombreBD = 'VinculacionProyecto';
 
 /* Datos del evento */
