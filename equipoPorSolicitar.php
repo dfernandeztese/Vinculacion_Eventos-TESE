@@ -12,31 +12,27 @@ $inicioEventoT = $_POST["inicioEventoT"];
 $finalEventoF = $_POST["finalEventoF"];
 $finalEventoT = $_POST["finalEventoT"];
 $duracionEvento = $_POST["duracionEvento"];
-
-/*echo $origen1_4."<br>";
-echo $tipoEvento4."<br>";
-echo $clasificacionEvento3."<br>";
-
-echo $tituloEvento2."<br>";
-echo $descripcionEvento2."<br>";
-echo $cantidadPersonas2."<br>";
-
-echo $inicioEventoF."<br>";
-echo $inicioEventoT."<br>";
-echo $finalEventoF."<br>";
-echo $finalEventoT."<br>";
-echo $duracionEvento."<br>";*/
 ?>
 <!DOCTYPE html> <!-- 7 -->
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/hojaEstilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinculacion Eventos TESE</title>
 </head>
-<body>
-<h4><center>DATOS DEL EVENTO POR PROGRAMAR</center></h4>
-    <h5><center>SELECCIÓN TODO EL EQUIPO Y/O LOS MATERIALES QUE NECESITE UTILIZAR PARA EL EVENTO</center></h5>
+<body id = "gen">
+    <!-- Titulo -->
+    <center>
+        <table width="1335px">
+            <tr>
+                <td id = "equipo">
+                    <h2><center>EQUIPO Y/O MATERIAL</center></h2>
+                </td>
+            </tr>
+        </table>
+    </center>
+
     <form action = "datosExpositor.php" method = "POST">
         <?php
             echo <<< EOT
@@ -55,45 +51,47 @@ echo $duracionEvento."<br>";*/
         ?>
         <fieldset>
             <legend><b>Materiales Disponibles</b></legend>
+            <p>Seleccione todo el equipo y/o materiales que necesite utilizar para el evento</p>
+            <p><b>Equipo disponible:</b></p>
             <table> <!-- Tabla: Estantes, Gabinete, Mesas, Microfonos--> 
                 <tr>
                     <td>
                         <input type="checkbox" id="material1" name="material1" value="estantes">
-                        <label for="material1">Estantes</label>
+                        <label for="material1">Estantes</label><br><br>
                     </td>
                     <td>
                         <label for="numEstantes">N° Estantes: </label>
-                        <input type="number" id="numEstantes" name="numEstantes" min="1" max="40">
+                        <input type="number" id="numEstantes" name="numEstantes" min="1" max="40"><br><br>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <input type="checkbox" id="material2" name="material2" value="gabinete">
-                        <label for="material2">Gabinete</label>
+                        <label for="material2">Gabinete</label><br><br>
                     </td>
                     <td>
                         <label for="numGabinetes">N° Gabinetes: </label>
-                        <input type="number" id="numGabinetes" name="numGabinetes" min="1" max="40">
+                        <input type="number" id="numGabinetes" name="numGabinetes" min="1" max="40"><br><br>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <input type="checkbox" id="material3" name="material3" value="mesas">
-                        <label for="material3">Mesas</label>
+                        <label for="material3">Mesas</label><br><br>
                     </td>
                     <td>
                         <label for="numMesas">N° Mesas: </label>
-                        <input type="number" id="numMesas" name="numMesas" min="1" max="150">
+                        <input type="number" id="numMesas" name="numMesas" min="1" max="150"><br><br>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <input type="checkbox" id="material4" name="material4" value="microfonos">
-                        <label for="material4">Microfonos</label>
+                        <label for="material4">Microfonos</label><br><br>
                     </td>
                     <td>
                         <label for="numMicrofonos">N° Microfonos: </label>
-                        <input type="number" id="numMicrofonos" name="numMicrofonos" min="1" max="15">
+                        <input type="number" id="numMicrofonos" name="numMicrofonos" min="1" max="15"><br><br>
                     </td>
                 </tr>
             </table>
@@ -101,20 +99,20 @@ echo $duracionEvento."<br>";*/
                 <tr>
                     <td>
                         <input type="checkbox" id="material5" name="material5" value="proyector">
-                        <label for="material5">Proyector</label>
+                        <label for="material5">Proyector</label><br><br>
                     </td>
                     <td>
                         <label for="tipoProyector">Tipo De Proyector: </label>
-                        <select name = "tipoProyector" >
+                        <select name = "tipoProyector" id = "gen">
                             <option value = ""></option>
                             <option value = "dlp">DLP</option>
                             <option value = "lcv">LCV</option>
                             <option value = "led">LED</option>
-                        </select>
+                        </select><br><br>
                     </td>
                     <td>
                         <label for="numProyectores">N° Proyectores: </label>
-                        <input type="number" id="numProyectores" name="numProyectores" min="1" max="5">
+                        <input type="number" id="numProyectores" name="numProyectores" min="1" max="5"><br><br>
                     </td>
                 </tr>
             </table>
@@ -122,11 +120,11 @@ echo $duracionEvento."<br>";*/
                 <tr>
                     <td>
                         <input type="checkbox" id="material6" name="material6" value="sillas">
-                        <label for="material6">Sillas</label>
+                        <label for="material6">Sillas</label><br><br>
                     </td>
                     <td>
                         <label for="numSillas">N° Sillas: </label>
-                        <input type="number" id="numSillas" name="numSillas" min="1" max="150">
+                        <input type="number" id="numSillas" name="numSillas" min="1" max="150"><br><br>
                     </td>
                 </tr>
             </table>
@@ -134,18 +132,18 @@ echo $duracionEvento."<br>";*/
                 <tr>
                     <td>
                         <input type="checkbox" id="material7" name="material7" value="sonido">
-                        <label for="material7">Sonido</label><br>
+                        <label for="material7">Sonido</label><br><br>
                     </td>
                     <td>
-                        <select name = "tipoAltavoces" >
+                        <select name = "tipoAltavoces" id = "gen">
                             <option value = ""></option>
                             <option value = "altavoces activos">Altavoces Activos</option>
                             <option value = "altavoces bluetooth">Altavoces Bluetooth</option>
-                        </select>
+                        </select><br><br>
                     </td>
                     <td>
                         <label for="numAltavoces">N° Altavoces: </label>
-                        <input type="number" id="numAltavoces" name="numAltavoces" min="1" max="9">
+                        <input type="number" id="numAltavoces" name="numAltavoces" min="1" max="9"><br><br>
                     </td>
                 </tr>
             </table>
@@ -155,36 +153,38 @@ echo $duracionEvento."<br>";*/
                         <input type="checkbox" id="material8" name="material8" value="Otro">
                         <label for="material8">Otro</label>
                     </td>
-                    <td>
+                    <!--<td>
                         <label for="nombreMaterialExtra">Introduzca El Nombre Del Material: </label>
-                    </td>
+                    </td>-->
                     <td>
-                        <input type="text" id="nombreMaterialExtra" name="nombreMaterialExtra" value="">
+                        <input type="text" id="gen" name="nombreMaterialExtra" value="" size = "90" placeholder = "Introduzca aquí el nombre del equipo / material">
+                        <br><br>
                     </td>
                     <td>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>
+                    <!--<td>
                         <label for="tipoMaterialExtra">Introduzca El Tipo De Material: </label>
-                    </td>
+                    </td>-->
                     <td>
-                        <input type="text" id="tipoMaterialExtra" name="tipoMaterialExtra" value="">
+                        <input type="text" id="gen" name="tipoMaterialExtra" value="" size = "90" placeholder = "Introduzca aquí el tipo del equipo / material, de lo contrario, introduzca la palabra 'normal'">
+                        <br><br>
                     </td>
                     <td>
                         <label for="numMaterialExtra">N° Material Extra: </label>
-                        <input type="number" id="numMaterialExtra" name="numMaterialExtra" min="1" max="150">
+                        <input type="number" id="gen" name="numMaterialExtra" min="1" max="150"><br><br>
                     </td>
                 </tr>
             </table>
             <table>
                 <tr>
                     <td>
-                        <input type = "submit" formaction ="javascript: history.go(-1)" name = "regresar" value = "REGRESAR">
+                        <button type = "submit" formaction ="javascript: history.go(-1)" id = "boton" ><span>REGRESAR</span></button>
                     </td>
                     <td>
-                        <input type = "submit" name = "siguiente" value = "SIGUIENTE">
+                        <button type = "submit" id = "boton"><span>SIGUIENTE</span></button>
                     </td>
                 </tr>
             </table>

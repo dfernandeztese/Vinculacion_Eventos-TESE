@@ -78,12 +78,22 @@ $correoOrigen = $_POST["correoOrigen"];
 <!DOCTYPE html> <!-- 9 -->
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/hojaEstilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinculacion Eventos TESE</title>
 </head>
-<body>
-    <h4><center>INFORMACIÓN CAPTURADA</center></h4>
+<body id = "gen">
+    <!-- Titulo -->
+    <center>
+        <table width="1335px">
+            <tr>
+                <td id = "informacionCapturada">
+                    <h2><center>INFORMACIÓN CAPTURADA</center></h2>
+                </td>
+            </tr>
+        </table>
+    </center>
     <form action = "confirmarSolicitud.php" method = "POST">
         <?php
             echo <<< EOT
@@ -148,47 +158,47 @@ $correoOrigen = $_POST["correoOrigen"];
             echo <<< EOT
             <table border="1" style = "border-collapse: 1px solid black">
                 <tr>
-                    <td>Origen del evento</td>
+                    <td id = "infoCap">Origen del evento</td>
                     <td>$origen1_6</td>
                 </tr>
                 <tr>
-                    <td>Tipo de evento</td>
+                    <td id = "infoCap">Tipo de evento</td>
                     <td>$tipoEvento6</td>
                 </tr>
                 <tr>
-                    <td>Clasificacion del evento</td>
+                    <td id = "infoCap">Clasificacion del evento</td>
                     <td>$clasificacionEvento5</td>
                 </tr>
                 <tr>
-                    <td>Titulo del evento</td>
+                    <td id = "infoCap">Titulo del evento</td>
                     <td>$tituloEvento4</td>
                 </tr>
                 <tr>
-                    <td>Descripcion</td>
+                    <td id = "infoCap">Descripcion</td>
                     <td>$descripcionEvento4</td>
                 </tr>
                 <tr>
-                    <td>Capacidad maxima de personas</td>
+                    <td id = "infoCap">Capacidad maxima de personas</td>
                     <td>$cantidadPersonas4</td>
                 </tr>
                 <tr>
-                    <td>Fecha de inicio</td>
+                    <td id = "infoCap">Fecha de inicio</td>
                     <td>$inicioEventoF3</td>
                 </tr>
                 <tr>
-                    <td>Hora exacta de inicio</td>
+                    <td id = "infoCap">Hora exacta de inicio</td>
                     <td>$inicioEventoT3</td>
                 </tr>
                 <tr>
-                    <td>Fecha de finalización</td>
+                    <td id = "infoCap">Fecha de finalización</td>
                     <td>$finalEventoF3</td>
                 </tr>
                 <tr>
-                    <td>Hora exacta de finalización</td>
+                    <td id = "infoCap">Hora exacta de finalización</td>
                     <td>$finalEventoT3</td>
                 </tr>
                 <tr>
-                    <td>Tipo de duracion</td>
+                    <td id = "infoCap">Tipo de duracion</td>
                     <td>$duracionEvento3</td>
                 </tr>
             </table>
@@ -203,7 +213,7 @@ $correoOrigen = $_POST["correoOrigen"];
                     echo <<< EOT
                     <table border="1" style = "border-collapse: 1px solid black">
                         <tr>
-                            <td>$m1_2</td>
+                            <td id = "infoCap">$m1_2</td>
                             <td>N° pza: $numM1_2</td>
                         </tr>
                     </table>
@@ -215,7 +225,7 @@ $correoOrigen = $_POST["correoOrigen"];
                     echo <<< EOT
                     <table border="1" style = "border-collapse: 1px solid black">
                         <tr>
-                            <td>$m2_2</td>
+                            <td id = "infoCap">$m2_2</td>
                             <td>N° pza: $numM2_2</td>
                         </tr>
                     </table>
@@ -227,7 +237,7 @@ $correoOrigen = $_POST["correoOrigen"];
                     echo <<< EOT
                     <table border="1" style = "border-collapse: 1px solid black">
                         <tr>
-                            <td>$m3_2</td>
+                            <td id = "infoCap">$m3_2</td>
                             <td>N° pza: $numM3_2</td>
                         </tr>
                     </table>
@@ -239,7 +249,7 @@ $correoOrigen = $_POST["correoOrigen"];
                     echo <<< EOT
                     <table border="1" style = "border-collapse: 1px solid black">
                         <tr>
-                            <td>$m4_2</td>
+                            <td id = "infoCap">$m4_2</td>
                             <td>N° pza: $numM4_2</td>
                         </tr>
                     </table>
@@ -251,7 +261,7 @@ $correoOrigen = $_POST["correoOrigen"];
                     echo <<< EOT
                     <table border="1" style = "border-collapse: 1px solid black">
                         <tr>
-                            <td>$m5_2</td>
+                            <td id = "infoCap">$m5_2</td>
                             <td>Tipo: $tipM5_2</td>
                             <td>N° pza: $numM5_2</td>
                         </tr>
@@ -264,7 +274,7 @@ $correoOrigen = $_POST["correoOrigen"];
                     echo <<< EOT
                     <table border="1" style = "border-collapse: 1px solid black">
                         <tr>
-                            <td>$m6_2</td>
+                            <td id = "infoCap">$m6_2</td>
                             <td>N° pza: $numM6_2</td>
                         </tr>
                     </table>
@@ -276,7 +286,7 @@ $correoOrigen = $_POST["correoOrigen"];
                     echo <<< EOT
                     <table border="1" style = "border-collapse: 1px solid black">
                         <tr>
-                            <td>$m7_2</td>
+                            <td id = "infoCap">$m7_2</td>
                             <td>Tipo: $tipM7_2</td>
                             <td>N° pza: $numM7_2</td>
                         </tr>
@@ -289,7 +299,7 @@ $correoOrigen = $_POST["correoOrigen"];
                     echo <<< EOT
                     <table border="1" style = "border-collapse: 1px solid black">
                         <tr>
-                            <td>$m8_2</td>
+                            <td id = "infoCap">$m8_2</td>
                             <td>Tipo: $tipM8_2</td>
                             <td>N° pza: $numM8_2</td>
                         </tr>
@@ -301,7 +311,7 @@ $correoOrigen = $_POST["correoOrigen"];
                     echo <<< EOT
                     <table border="1" style = "border-collapse: 1px solid black">
                         <tr>
-                            <td>No se seleccionó ningun equipo y/o material</td>
+                            <td id = "infoCap">No se seleccionó ningun equipo y/o material</td>
                         </tr>
                     </table>
                     EOT;
@@ -314,35 +324,35 @@ $correoOrigen = $_POST["correoOrigen"];
                 <?php
                 echo <<< EOT
                     <tr>
-                        <td>Nombre(s)</td>
+                        <td id = "infoCap">Nombre(s)</td>
                         <td>$nombres</td>
                     </tr>
                     <tr>
-                        <td>Apellido paterno</td>
+                        <td id = "infoCap">Apellido paterno</td>
                         <td>$apellidoP</td>
                     </tr>
                     <tr>
-                        <td>Apellido materno</td>
+                        <td id = "infoCap">Apellido materno</td>
                         <td>$apellidoM</td>
                     </tr>
                     <tr>
-                        <td>CURP</td>
+                        <td id = "infoCap">CURP</td>
                         <td>$curp</td>
                     </tr>
                     <tr>
-                        <td>Correo electronico</td>
+                        <td id = "infoCap">Correo electronico</td>
                         <td>$correo1</td>
                     </tr>
                     <tr>
-                        <td>Correo electronico alterno</td>
+                        <td id = "infoCap">Correo electronico alterno</td>
                         <td>$correo2</td>
                     </tr>
                     <tr>
-                        <td>Telefono</td>
+                        <td id = "infoCap">Telefono</td>
                         <td>$telefono</td>
                     </tr>
                     <tr>
-                        <td>Celular</td>
+                        <td id = "infoCap">Celular</td>
                         <td>$celular</td>
                     </tr>
                 EOT;                
@@ -355,47 +365,47 @@ $correoOrigen = $_POST["correoOrigen"];
                 <?php
                 echo <<< EOT
                     <tr>
-                        <td>Nombre institucion</td>
+                        <td id = "infoCap">Nombre institucion</td>
                         <td>$nombreInstitucion</td>
                     </tr>
                     <tr>
-                        <td>Plantel</td>
+                        <td id = "infoCap">Plantel</td>
                         <td>$plantel</td>
                     </tr>
                     <tr>
-                        <td>Calle</td>
+                        <td id = "infoCap">Calle</td>
                         <td>$calle</td>
                     </tr>
                     <tr>
-                        <td>Numero</td>
+                        <td id = "infoCap">Numero</td>
                         <td>$numero</td>
                     </tr>
                     <tr>
-                        <td>Colonia</td>
+                        <td id = "infoCap">Colonia</td>
                         <td>$colonia</td>
                     </tr>
                     <tr>
-                        <td>Código postal</td>
+                        <td id = "infoCap">Código postal</td>
                         <td>$codigoPostal</td>
                     </tr>
                     <tr>
-                        <td>Estado / Ciudad</td>
+                        <td id = "infoCap">Estado / Ciudad</td>
                         <td>$estadoCiudad</td>
                     </tr>
                     <tr>
-                        <td>Pais</td>
+                        <td id = "infoCap">Pais</td>
                         <td>$pais</td>
                     </tr>
                     <tr>
-                        <td>Telefono</td>
+                        <td id = "infoCap">Telefono</td>
                         <td>$telefonoOrigen</td>
                     </tr>
                     <tr>
-                        <td>Extension</td>
+                        <td id = "infoCap">Extension</td>
                         <td>$telefonoExtension</td>
                     </tr>
                     <tr>
-                        <td>Correo electronico</td>
+                        <td id = "infoCap">Correo electronico</td>
                         <td>$correoOrigen</td>
                     </tr>
                 EOT;                
@@ -406,10 +416,10 @@ $correoOrigen = $_POST["correoOrigen"];
         <table>
             <tr>
                 <td>
-                    <input type = "submit" formaction ="javascript: history.go(-1)" name = "regresar" value = "REGRESAR">
+                    <button type = "submit" formaction ="javascript: history.go(-1)" id = "boton" ><span>REGRESAR</span></button>
                 </td>
                 <td>
-                    <input type = "submit" name = "registrar" value = "REGISTRAR SOLICITUD">
+                    <button type = "submit" id = "boton"><span>ENVIAR SOLICITUD</span></button>
                 </td>
             </tr>
         </table>

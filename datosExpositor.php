@@ -77,48 +77,28 @@ for($a = 0; $a<8; $a++){
         }
     }
 }
-
-/*echo $origen1_5."<br>";
-echo $tipoEvento5."<br>";
-echo $clasificacionEvento4."<br>";
-echo $tituloEvento3."<br>";
-echo $descripcionEvento3."<br>";
-echo $cantidadPersonas3."<br>";
-echo $inicioEventoF2."<br>";
-echo $inicioEventoT2."<br>";
-echo $finalEventoF2."<br>";
-echo $finalEventoT2."<br>";
-echo $duracionEvento2."<br>";
-
-echo "M1: ".$m1."<br>";
-echo $numM1."<br>";
-echo "M2: ".$m2."<br>";
-echo $numM2."<br>";
-echo "M3: ".$m3."<br>";
-echo $numM3."<br>";
-echo "M4: ".$m4."<br>";
-echo $numM4."<br>";
-echo "M5: ".$m5."<br>";
-echo $tipM5."<br>";
-echo $numM5."<br>";
-echo "M6: ".$m6."<br>";
-echo $numM6."<br>";
-echo "M7: ".$m7."<br>";
-echo $tipM7."<br>";
-echo $numM7."<br>";
-echo "M8: ".$m8."<br>";
-echo $tipM8."<br>";
-echo $numM8."<br>";*/
 ?>
 <!DOCTYPE html> <!-- 8 -->
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/hojaEstilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinculacion Eventos TESE</title>
 </head>
-<body>
-    <h4><center>DATOS DEL EXPOSITOR</center></h4>
+<body id = "gen">
+    <!-- Titulo -->
+    <center>
+        <table width="1335px">
+            <tr>
+                <td id = "datosExpositor">
+                    <h2><center>DATOS PERSONALES DEL EXPOSITOR</center></h2>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <p>Les agradecemos su interés en presentarse en nuestra Institución y nuestro Departamento de Vinculación y Extensión.
+Por favor, responda cada campo cuidadosamente.</p>
     <form action = "verificarDatos.php" method = "POST">
         <?php
             echo <<< EOT
@@ -165,32 +145,64 @@ echo $numM8."<br>";*/
             EOT;
         ?>
         <fieldset>
-            <legend><b>Datos Personales</b></legend>
-            <label for="nombres">Nombre(s): </label>
-            <input type="text" id="nombres" name="nombres" value=""><br><br>
+            <legend><b>Datos personales</b></legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombres">Nombre(s): </label><br><br>
+                    </td>
+                    <td>
+                        <input type="text" id="gen" name="nombres" value="" size = "60"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="apellidoP">Apellido Paterno: </label><br><br>
+                    </td>
+                    <td>
+                        <input type="text" id="gen" name="apellidoP" value="" size = "60"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="apellidoM">Apellido Materno: </label><br><br>
+                    </td>
+                    <td>
+                        <input type="text" id="gen" name="apellidoM" value="" size = "60"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="curp">CURP: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="gen" name="curp" value="" size = "60">
+                    </td>
+                </tr>
+            </table>
 
-            <label for="apellidoP">Apellido Paterno: </label>
-            <input type="text" id="apellidoP" name="apellidoP" value=""><br><br>
-
-            <label for="apellidoM">Apellido Materno: </label>
-            <input type="text" id="apellidoM" name="apellidoM" value=""><br><br>
-
-            <label for="curp">CURP: </label>
-            <input type="text" id="curp" name="curp" value="">
         </fieldset>
         <fieldset>
-            <legend><b>Medios De Contacto</b></legend>
-            <label for="correo1">Correo Electronico: </label>
-            <input type="email" id="correo1" name="correo1" value=""><br><br>
-
-            <label for="correo2">Correo Electronico Alterno: </label>
-            <input type="email" id="correo2" name="correo2" value=""><br><br>
-
-            <label for="telefono">Telefono: </label>
-            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value=""><br><br>
-
-            <label for="celular">Celular: </label>
-            <input type="tel" id="celular" name="celular" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value=""><br><br>
+            <legend><b>Medios de contacto</b></legend>
+            <table>
+                <tr>
+                    <td><label for="correo1">Correo Electronico: </label><br><br></td>
+                    <td><input type="email" id="gen" name="correo1" value="" size = "60"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="correo2">Correo Electronico Alterno: </label><br><br></td>
+                    <td><input type="email" id="gen" name="correo2" value="" size = "60"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="telefono">Telefono: </label><br><br></td>
+                    <td><input type="tel" id="gen" name="telefono" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value="" size = "60"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="celular">Celular: </label></td>
+                    <td><input type="tel" id="gen" name="celular" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value="" size = "60"></td>
+                </tr>
+            </table>
+            
         </fieldset>
         <?php
             if(strcmp($origen1_5, "interno") == 0){
@@ -198,48 +210,66 @@ echo $numM8."<br>";*/
                     <fieldset>
                         <legend><b>Datos De La Institución o Empresa</b></legend>
                         <!---->
-                        <label for="nombreInstitucion">Nombre De La Institución: </label>
-                        <input type="text" id="nombreInstitucion" name="nombreInstitucion" value="Tecnológico Nacional de México" readonly><br><br>
-
-                        <label for="plantel">Plantel: </label>
-                        <input type="text" id="plantel" name="plantel" value="Tecnológico de Estudios Superiores de Ecatepec" readonly><br><br>
-
+                        <table>
+                            <tr>
+                                <td><label for="nombreInstitucion">Nombre De La Institución: </label></td>
+                                <td><input type="text" id="gen" name="nombreInstitucion" value="Tecnológico Nacional de México" size = "90" readonly><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="plantel">Plantel: </label></td>
+                                <td><input type="text" id="gen" name="plantel" value="Tecnológico de Estudios Superiores de Ecatepec" size = "90" readonly><br><br></td>
+                            </tr>
+                        </table>
+                        
                         <b>Dirección: </b><br><br>
-                        <label for="calle">Calle: </label>
-                        <input type="text" id="calle" name="calle" value="Av. Tecnológico" readonly><br><br>
-
-                        <label for="numero">Numero: </label>
-                        <input type="text" id="numero" name="numero" value="S/N" readonly><br><br>
-
-                        <label for="colonia">Colonia: </label>
-                        <input type="text" id="colonia" name="colonia" value="Valle de Anahuac" readonly><br><br>
-
-                        <label for="codigoPostal">Código Postal: </label>
-                        <input type="text" id="codigoPostal" name="codigoPostal" value="55210" readonly><br><br>
-
-                        <label for="estadoCiudad">Estado / Ciudad: </label>
-                        <input type="text" id="estadoCiudad" name="estadoCiudad" value="Ecatepec de Morelos, Estado De Mexico" readonly><br><br>
-
-                        <label for="pais">Pais: </label>
-                        <input type="text" id="pais" name="pais" value="México" readonly><br><br>
-
-                        <b>Medios De Contacto: </b><br><br>
-                        <label for="telefonoOrigen">Telefono: </label>
-                        <input type="tel" id="telefonoOrigen" name="telefonoOrigen" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value="55 5000 2300" readonly><br><br>
-
-                        <label for="telefonoExtension">Extensión: </label>
-                        <input type="tel" id="telefonoExtension" name="telefonoExtension" value="2303" pattern="[0-9]{4}" readonly><br><br>
-
-                        <label for="correoOrigen">Correo Electronico: </label>
-                        <input type="email" id="correoOrigen" name="correoOrigen" value="soportecorreo@tese.edu.mx" readonly><br><br>
-
+                        <table>
+                            <tr>
+                                <td><label for="calle">Calle: </label><br><br></td>
+                                <td><input type="text" id="gen" name="calle" value="Av. Tecnológico" size = "90" readonly><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="numero">Numero: </label><br><br></td>
+                                <td><input type="text" id="gen" name="numero" value="S/N" size = "90" readonly><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="colonia">Colonia: </label><br><br></td>
+                                <td><input type="text" id="gen" name="colonia" value="Valle de Anahuac" size = "90" readonly><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="codigoPostal">Código Postal: </label><br><br></td>
+                                <td><input type="text" id="gen" name="codigoPostal" value="55210" size = "90" readonly><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="estadoCiudad">Estado / Ciudad: </label><br><br></td>
+                                <td><input type="text" id="gen" name="estadoCiudad" value="Ecatepec de Morelos, Estado De Mexico" size = "90" readonly><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="pais">Pais: </label></td>
+                                <td><input type="text" id="gen" name="pais" value="México" size = "90" readonly></td>
+                            </tr>
+                        </table>
+                        <b>Medios De Contacto:</b>
+                        <table>
+                            <tr>
+                                <td><label for="telefonoOrigen">Telefono: </label><br><br></td>
+                                <td><input type="tel" id="gen" name="telefonoOrigen" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value="55 5000 2300" size = "90" readonly><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="telefonoExtension">Extensión: </label><br><br></td>
+                                <td><input type="tel" id="gen" name="telefonoExtension" value="2303" pattern="[0-9]{4}" size = "90" readonly><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="correoOrigen">Correo Electronico: </label><br><br></td>
+                                <td><input type="email" id="gen" name="correoOrigen" value="soportecorreo@tese.edu.mx" size = "90" readonly><br><br></td>
+                            </tr>
+                        </table>
                         <table>
                             <tr>
                                 <td>
-                                    <input type = "submit" formaction ="javascript: history.go(-1)" name = "regresar" value = "REGRESAR">
+                                    <button type = "submit" formaction ="javascript: history.go(-1)" id = "boton" ><span>REGRESAR</span></button>
                                 </td>
                                 <td>
-                                    <input type = "submit" name = "siguiente" value = "SIGUIENTE">
+                                    <button type = "submit" id = "boton"><span>SIGUIENTE</span></button>
                                 </td>
                             </tr>
                         </table>
@@ -250,55 +280,73 @@ echo $numM8."<br>";*/
             else{
                 echo <<< EOT
                 <fieldset>
-                    <legend><b>Datos De La Institución o Empresa</b></legend>
-                    <!---->
-                    <label for="nombreInstitucion">Nombre De La Institución: </label>
-                    <input type="text" id="nombreInstitucion" name="nombreInstitucion" value=""><br><br>
-        
-                    <label for="plantel">Plantel: </label>
-                    <input type="text" id="plantel" name="plantel" value=""><br><br>
-        
-                    <b>Dirección: </b><br><br>
-                    <label for="calle">Calle: </label>
-                    <input type="text" id="calle" name="calle" value=""><br><br>
-        
-                    <label for="numero">Numero: </label>
-                    <input type="text" id="numero" name="numero" value=""><br><br>
-        
-                    <label for="colonia">Colonia: </label>
-                    <input type="text" id="colonia" name="colonia" value=""><br><br>
-        
-                    <label for="codigoPostal">Código Postal: </label>
-                    <input type="text" id="codigoPostal" name="codigoPostal" value=""><br><br>
-        
-                    <label for="estadoCiudad">Estado / Ciudad: </label>
-                    <input type="text" id="estadoCiudad" name="estadoCiudad" value=""><br><br>
-        
-                    <label for="pais">Pais: </label>
-                    <input type="text" id="pais" name="pais" value=""><br><br>
-        
-                    <b>Medios De Contacto: </b><br><br>
-                    <label for="telefonoOrigen">Telefono: </label>
-                    <input type="tel" id="telefonoOrigen" name="telefonoOrigen" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value=""><br><br>
-        
-                    <label for="telefonoExtension">Extensión: </label>
-                    <input type="tel" id="telefonoExtension" name="telefonoExtension" value="" pattern="[0-9]{4}"><br><br>
-        
-                    <label for="correoOrigen">Correo Electronico: </label>
-                    <input type="email" id="correoOrigen" name="correoOrigen" value=""><br><br>
-        
-                    <table>
-                        <tr>
-                            <td>
-                                <input type = "submit" formaction ="javascript: history.go(-1)" name = "regresar" value = "REGRESAR">
-                            </td>
-                            <td>
-                                <input type = "submit" name = "siguiente" value = "SIGUIENTE">
-                            </td>
-                        </tr>
-                    </table>
-                    <!---->
-                </fieldset>
+                        <legend><b>Datos De La Institución o Empresa</b></legend>
+                        <!---->
+                        <table>
+                            <tr>
+                                <td><label for="nombreInstitucion">Nombre De La Institución: </label></td>
+                                <td><input type="text" id="gen" name="nombreInstitucion" value="" size = "90"><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="plantel">Plantel: </label></td>
+                                <td><input type="text" id="gen" name="plantel" value="" size = "90"><br><br></td>
+                            </tr>
+                        </table>
+                        
+                        <b>Dirección: </b><br><br>
+                        <table>
+                            <tr>
+                                <td><label for="calle">Calle: </label><br><br></td>
+                                <td><input type="text" id="gen" name="calle" value="" size = "90"><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="numero">Numero: </label><br><br></td>
+                                <td><input type="text" id="gen" name="numero" value="" size = "90"><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="colonia">Colonia: </label><br><br></td>
+                                <td><input type="text" id="gen" name="colonia" value="" size = "90"><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="codigoPostal">Código Postal: </label><br><br></td>
+                                <td><input type="text" id="gen" name="codigoPostal" value="" size = "90"><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="estadoCiudad">Estado / Ciudad: </label><br><br></td>
+                                <td><input type="text" id="gen" name="estadoCiudad" value="" size = "90"><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="pais">Pais: </label></td>
+                                <td><input type="text" id="gen" name="pais" value="" size = "90"></td>
+                            </tr>
+                        </table>
+                        <b>Medios De Contacto:</b>
+                        <table>
+                            <tr>
+                                <td><label for="telefonoOrigen">Telefono: </label><br><br></td>
+                                <td><input type="tel" id="gen" name="telefonoOrigen" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" value="" size = "90"><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="telefonoExtension">Extensión: </label><br><br></td>
+                                <td><input type="tel" id="gen" name="telefonoExtension" value="" pattern="[0-9]{4}" size = "90"><br><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="correoOrigen">Correo Electronico: </label><br><br></td>
+                                <td><input type="email" id="gen" name="correoOrigen" value="" size = "90"><br><br></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>
+                                    <button type = "submit" formaction ="javascript: history.go(-1)" id = "boton" ><span>REGRESAR</span></button>
+                                </td>
+                                <td>
+                                    <button type = "submit" id = "boton"><span>SIGUIENTE</span></button>
+                                </td>
+                            </tr>
+                        </table>
+                        <!---->
+                    </fieldset>
                 EOT;
             }
         ?>

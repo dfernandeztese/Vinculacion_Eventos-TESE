@@ -6,25 +6,27 @@ $clasificacionEvento2 = $_POST["clasificacionEvento2"];
 $tituloEvento = $_POST["tituloEvento"];
 $descripcionEvento = $_POST["descripcionEvento"];
 $cantidadPersonas = $_POST["cantidadPersonas"];
-
-/*echo $origen1_3."<br>";
-echo $tipoEvento3."<br>";
-echo $clasificacionEvento2."<br>";
-
-echo $tituloEvento."<br>";
-echo $descripcionEvento."<br>";
-echo $cantidadPersonas."<br>";*/
 ?>
 <!DOCTYPE html> <!-- 6 -->
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/hojaEstilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinculacion Eventos TESE</title>
 </head>
-<body>
-    <h4><center>DATOS DEL EVENTO POR PROGRAMAR</center></h4>
-    <h5><center>SELECCIÓN DEL HORARIO</center></h5>
+<body id = "gen">
+    <!-- Titulo -->
+    <center>
+        <table width="1335px">
+            <tr>
+                <td id = "seleccionHorario">
+                    <h2><center>SELECCIÓN DEL HORARIO</center></h2>
+                </td>
+            </tr>
+        </table>
+    </center>
+
     <form action = "equipoPorSolicitar.php" method = "POST">
             <?php
                 echo <<< EOT
@@ -37,26 +39,26 @@ echo $cantidadPersonas."<br>";*/
                 EOT;
             ?>
         <fieldset>
-            <legend><b>Seleccione El Día y Hora De Inicio Del Evento</b></legend>
+            <legend><b>Seleccione el día y hora de inicio del evento:</b></legend>
             <label for="inicioEventoF">Fecha: </label>
-            <input type="date" id="inicioEventoF" name="inicioEventoF" value="">
+            <input type="date" id="inicioEventoF" name="inicioEventoF" value="" min = "2024-01-01" max = "2024-12-31">
 
             <label for="inicioEventoT">Hora: </label>
             <input type="time" id="inicioEventoT" name="inicioEventoT" value="">
         </fieldset>
         <br><br>
         <fieldset>
-            <legend><b>Seleccione El Día y Hora De Finalización Del Evento</b></legend>
+            <legend><b>Seleccione el día y hora de finalización del evento</b></legend>
             <label for="finalEventoF">Fecha: </label>
-            <input type="date" id="finalEventoF" name="finalEventoF" value="">
+            <input type="date" id="finalEventoF" name="finalEventoF" value="" checked>
 
             <label for="finalEventoT">Hora: </label>
             <input type="time" id="finalEventoT" name="finalEventoT" value="">
         </fieldset>
         <br><br>
         <fieldset>
-            <legend><b>¿Cual Sera La Duración Del Evento?</b></legend>
-            <input type="radio" id="duracionEvento" name="duracionEvento" value="permanente">
+            <legend><b>¿Cuál será la duración del evento?</b></legend>
+            <input type="radio" id="duracionEvento" name="duracionEvento" value="permanente" checked>
             <label for="duracionEvento">Permanente</label><br>
 
             <input type="radio" id="duracionEvento" name="duracionEvento" value="temporal">
@@ -65,10 +67,10 @@ echo $cantidadPersonas."<br>";*/
         <table>
             <tr>
                 <td>
-                    <input type = "submit" formaction ="javascript: history.go(-1)" name = "regresar" value = "REGRESAR">
+                    <button type = "submit" formaction ="javascript: history.go(-1)" id = "boton" ><span>REGRESAR</span></button>
                 </td>
                 <td>
-                    <input type = "submit" name = "siguiente" value = "SIGUIENTE">
+                    <button type = "submit" id = "boton"><span>SIGUIENTE</span></button>
                 </td>
             </tr>
         </table>

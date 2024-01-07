@@ -1,28 +1,39 @@
 <!DOCTYPE html> <!-- 1 -->
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/hojaEstilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENTOS VINCULACIÓN - SOLICITUD</title>
 </head>
 <body background = "while">
-    <!-- Imagen TESE Superior -->
-    <table>
+    <!-- Carrucel  -->
+    <iframe src="presentacion.html" width="1335px" height="415px" title="PRESENTACION" style="border:none;"></iframe>
+    
+    <!-- Formulario -->
+    <iframe src="origen1.html" width="1335px" height = "300px" title="description"></iframe>
+
+    <form action = "index.html" method = "POST">
+        <button type = "submit" id = "boton"><span>CANCELAR SOLICITUD</span></button>
+    </form>
+    <!-- Presentacion inferior-->
+    <table id = "barra2">
         <tr>
-            <th><img src = "Images/Logo_TESE.png" width="230px"></th>
-            <th><h1>TECNOLÓGICO DE ESTUDIOS SUPERIORES DE ECATEPEC</h1></th>
+            <td><img src = "Images/logo1.png" width="270px"></td>
+            <td><img src = "Images/logo2.png" width="160px"></td>
+            <td><img src = "Images/logo3.png" width="250px"></td>
+            <td><img src = "Images/logo4.png" width="220px"></td>
+            <td><img src = "Images/logo5.png" width="300px"></td>
+        </tr>
+        <tr id = "barra2Relleno">
+            <td colspan = "5">
+                <center>
+                    Av. Tecnológico S/N C.P.55210 Col. Valle de Anáhuac, Ecatepec de Morelos, Estado de México<br>
+                    Teléfono: 01 (55) 50 00 23 00<br>
+                    E-mail: webmaster_tese@tese.edu.mx
+                </center>
+            </td>
         </tr>
     </table>
-    <!-- Titulos -->
-    <h2><center>SOLICITUD</center></h2>
-    <!--<p>Les agradecemos su interés en presentarse en nuestra Institución y nuestro Departamento de vinculación y Extensión.</p>
-    <p>Por favor, responda cada campo cuidadosamente.</p>
-    <h1></h1>-->
-    <!-- Formulario -->
-    <iframe src="origen1.html" height="400" width="1245" title="description"></iframe>
-
-    <form action = "index.html">
-        <input type = "submit" name = "cancelar" value = "CANCELAR SOLICITUD">
-    </form>
 </body>
 </html>

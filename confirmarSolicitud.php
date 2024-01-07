@@ -418,13 +418,23 @@ $sector11 = mysqli_query($conexionDB, $guardarAprobacionEvento) or die ("ACABA D
 <!DOCTYPE html> <!-- 10 Final -->
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/hojaEstilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinculacion Eventos TESE</title>
 </head>
-<body>
+<body id = "gen">
+<center>
+        <table width="1335px">
+            <tr>
+                <td id = "solicitud">
+                    <h2><center>SOLICITUD</center></h2>
+                </td>
+            </tr>
+        </table>
+    </center>
     <h1><center>SOLICITUD REGISTRADA CON EXITO!!!</center></h1>
     <h2><center>El N° DE FOLIO ES: <?php echo $idEvento;?></center></h2>
-    <h3><center>ANOTELO EN UN LUGAR SEGURO</center></h3>
+    <h3><center>Por favor, toma nora de este folio y guárdalo en un lugar seguro.</center></h3>
 </body>
 </html>

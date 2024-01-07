@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/hojaEstilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinculacion Eventos TESE</title>
+</head>
+<body onload="rotar_imagen();">
+  <script>
+    function rotar_imagen(){
+    var tiempo = 3000;//tiempo en milisegundos
+    var arrImagenes = ["Images/fondo1.jpg", "Images/fondo2.jpg", "Images/fondo3.jpg", "Images/fondo4.jpg", "Images/fondo5.jpg", "Images/fondo6.jpg", "Images/fondo7.jpeg", "Images/fondo8.jpg"];
+    
+    _img = document.getElementById('rotativo');
+    
+    //cargar la 1er imagen
+    _img.src = arrImagenes[0];
+    var i=1;
+    setInterval(function(){
+      _img.src = arrImagenes[i];
+      i = (i == arrImagenes.length-1)? 0 : (i+1);
+    }, tiempo);
+    }
+  </script>
+  <center>
+    <table>
+      <tr>
+        <td colspan = "2"><center><p id = "tese">TECNOLÓGICO DE ESTUDIOS SUPERIORES DE ECATEPEC</p></center></td>
+      </tr>
+      <tr>
+          <td><img src = "Images/Logo_TESE.png" width = "260px"></td>
+          <td><img id="rotativo"/></td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
