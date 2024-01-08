@@ -2,7 +2,7 @@
 $nombreHost = 'server-tese-bd.mysql.database.azure.com';
 $nombreUsuario = 'adminVinculacionTese';
 $pwd = 'Qwerty369';
-$nombreBD = 'VinculacionProyecto';
+$nombreBD = 'vinculacionproyecto';
 $folio = $_POST["folio"];
 $msj = "";
 // 0 - Conexion a la base de datos

@@ -3,7 +3,7 @@
 $nombreHost = 'server-tese-bd.mysql.database.azure.com';
 $nombreUsuario = 'adminVinculacionTese';
 $pwd = 'Qwerty369';
-$nombreBD = 'VinculacionProyecto';
+$nombreBD = 'vinculacionproyecto';
 
 /* Datos del evento */
 $origen = $_POST["origen1_7"];
