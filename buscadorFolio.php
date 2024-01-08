@@ -5,7 +5,6 @@ $pwd = 'Qwerty369';
 $nombreBD = 'VinculacionProyecto';
 $folio = $_POST["folio"];
 $msj = "";
-
 // 0 - Conexion a la base de datos
 $conexionDB = mysqli_connect($nombreHost, $nombreUsuario, $pwd, $nombreBD) or die("¡ERROR! - NO SE PUDO CONECTAR AL SERVIDOR :(");
 
