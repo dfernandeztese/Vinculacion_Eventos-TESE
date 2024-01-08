@@ -109,8 +109,8 @@ CREATE TABLE Contacto (
 idContacto int PRIMARY KEY AUTO_INCREMENT,
 correo1 varchar (30),
 correo2 varchar (30),
-telefono varchar (10),
-celular varchar (10),
+telefono varchar (16),
+celular varchar (16),
 idExpositor2 int,
 foreign key (idExpositor2) references Expositor (idExpositor)
 );
