@@ -136,4 +136,6 @@ select * from expositor;
 select * from contacto;
 select * from expositor0tipoeve;
 select * from aprobacionevento;
+
+/* Eliminar base de datos --- > Solo para hacer pruebas de concepto */
 drop database VinculacionProyecto;

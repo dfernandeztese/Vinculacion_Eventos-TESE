@@ -26,7 +26,7 @@ else{
     }
     else{
         if(strcmp($estado, "pendiente") == 0){
-            $msj = "LA SOLICITUD ESTA EN PROCEDO DE REVISIÓN.";
+            $msj = "LA SOLICITUD ESTA EN PROCESO DE REVISIÓN.";
         }
         else{
             $msj = "EL FOLIO NO EXISTE.";
