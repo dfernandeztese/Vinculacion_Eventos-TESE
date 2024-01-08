@@ -68,7 +68,7 @@ foreign key (idEquipoRequerido1) references EquipoRequerido (idEquipoRequerido)
 CREATE TABLE Origen (
 idOrigen int PRIMARY KEY AUTO_INCREMENT,
 nombreInstitucion varchar (50),
-telefono varchar (10),
+telefono varchar (16),
 extencion varchar (10),
 correo varchar (30)
 );
@@ -79,7 +79,7 @@ colonia varchar (50),
 codigoPost varchar (10),
 calle varchar (50),
 numero varchar (10),
-estadoCiudad varchar (25),
+estadoCiudad varchar (40),
 pais varchar (20),
 plantel varchar (50),
 idOrigen1 int,
@@ -136,3 +136,4 @@ select * from expositor;
 select * from contacto;
 select * from expositor0tipoeve;
 select * from aprobacionevento;
+drop database VinculacionProyecto;
