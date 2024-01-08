@@ -393,14 +393,14 @@ if ($stmt = $conexionDB->prepare($idExpositor)) {
     while ($stmt->fetch()) {}
     $stmt->close();
 }
-
+echo $idExpositor."<br>";/////
 /* --- 10 --- Tabla: contacto */
 // Preparar la instruccion para guardar nuevo registro para la tabla contacto
 $guardarContacto = "INSERT INTO contacto (correo1, correo2, telefono, celular, idExpositor2) VALUES ('".$correo1."','".$correo2."','".$telefono."','".$celular."','".$idExpositor."')";
-
+echo $guardarContacto."<br>";////
 // Se guarda la informacion en la tabla contacto
 $sector10 = mysqli_query($conexionDB, $guardarContacto) or die ("ACABA DE SUCEDER UN ERROR AL MOMENTO DE REGISTRAR LA SOLICITUD (SECTOR 10)");
-
+echo $sector10."<br>";
 /* --- 10 --- Tabla: expositor0tipoeve */
 // Preparar la instruccion para guardar nuevo registro para la tabla expositor0tipoeve
 $guardarExpositor0TipoEve = "INSERT INTO expositor0tipoeve (idExpositor1, idTipoEvento1) VALUES ('".$idExpositor."','".$idTipoEvento."')";
